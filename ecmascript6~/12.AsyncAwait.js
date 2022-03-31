@@ -140,3 +140,13 @@ async function sample() {
   const data2 = await sampleFunc2(data1);
   return data2;
 }
+
+
+{
+  async function main(){
+    const result = await promises
+    return 'seok' //async에서 return한 값은 무조건 then으로 받아야됨
+  }
+
+  main.then((result)=>{console.log()})
+}

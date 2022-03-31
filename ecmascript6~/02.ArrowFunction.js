@@ -14,6 +14,9 @@ console.log(myFunc('영희')); // 출력 => 안녕 영희
 const myFunc = (name) => `안녕 ${name}`;
 
 console.log(myFunc('영희')); // 출력 => 안녕 영희
+//하지만 객체를 리턴할때는 소괄호 필수
+const obj = (x,y)=>({x,y}) // const obj = (x,y)=> {return{x:x,y:y}}
+
 
 
 // 또한, 화살표 함수를 map과 filter, reduce 등 내장 함수와 함께 사용할 수 있습니다.

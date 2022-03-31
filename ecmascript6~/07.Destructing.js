@@ -1,5 +1,7 @@
 // Array and object destructing(배열 및 객체 비구조화)
 // 비구조화를 통해 배열 또는 객체의 값을 새 변수에 더 쉽게 할당할 수 있습니다
+// key값이 변수명이랑 똑같을떄
+// this가 사용되는 객체는 구조분해 하면 x
 
 // ES5 문법
 const contacts = {
@@ -24,6 +26,14 @@ let { famillyName2, name2, age2 } = contacts2;
 console.log(famillyName2); // 이
 console.log(name2); // 영희
 console.log(age2); // 22
+
+
+
+const example = {a:123,b:{c:123,d:144}}
+// const a = example.a
+// const d = example.b.d
+const {a,b:{d}} = example
+
 
 
 // ES5 문법
@@ -59,3 +69,5 @@ let [, , wow] = arr  //첫번째, 두번째를 빈값으로 선언
 console.log(wow)  //영철
 
 
+let [x,y, ,z] = arr 
+console.log(x,y,z) //광희,지수,20 //자리가 같애야됨

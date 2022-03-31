@@ -40,7 +40,7 @@ const promise3 = new Promise((resolve, reject)=>{
   }, 3000);
 });
 
-promise3.then(value => console.log(value));
+promise3.then(value => console.log(value)); 
 // 3초 후에 결과가 출력
 // resolve
 
