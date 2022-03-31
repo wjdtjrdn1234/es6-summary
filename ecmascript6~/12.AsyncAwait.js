@@ -144,9 +144,15 @@ async function sample() {
 
 {
   async function main(){
-    const result = await promises
-    return 'seok' //async에서 return한 값은 무조건 then으로 받아야됨
+    try{
+      const result = await promises
+      return 'seok' //async에서 return한 값은 무조건 then으로 받아야됨
+    }
+    catch(err){
+      console.log(err)
+    }
   }
 
   main.then((result)=>{console.log()})
+  const name = await main() //then을 쓰거나 await를 쓰거나
 }
